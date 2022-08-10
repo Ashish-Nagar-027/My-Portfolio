@@ -179,8 +179,7 @@
     transition: transform 0.5s;
  }
  .social-icon:hover {
-    /* transform:  scale(1.2) rotate(360deg)  translate(0px, 0px); */
-    transform:  rotate(360deg) ;
+    transform:  scale(1.2) rotate(360deg)  translate(0px, 0px);
     
  }
 
@@ -322,8 +321,8 @@ hr {
     }
 
     .hamburger:hover {
+        transform: scale(1.5)  translate(0px, 0px);
         /* transform: scale(1.4) rotate(90deg) translate(0px, 0px); */
-        transform:  rotate(90deg) ;
     }
 
     .show {
