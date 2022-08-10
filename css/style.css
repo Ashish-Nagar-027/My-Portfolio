@@ -110,6 +110,7 @@
      top: 0;
      width: 100vw;
      height: 5rem;
+     align-items: center;
  }
 
  nav.sticky {
@@ -178,7 +179,8 @@
     transition: transform 0.5s;
  }
  .social-icon:hover {
-    transform:  scale(1.2) rotate(360deg)  translate(0px, 0px);
+    /* transform:  scale(1.2) rotate(360deg)  translate(0px, 0px); */
+    transform:  rotate(360deg) ;
     
  }
 
@@ -312,14 +314,16 @@ hr {
         color: white;
         font-size: 30px;
         /* margin: 20px; */
-        align-self: flex-end;
+        /* align-self: flex-end; */
         cursor: pointer;
         transition: transform 0.8s;
         position: relative;
+        align-items: center;
     }
 
     .hamburger:hover {
-        transform: scale(1.4) rotate(90deg) translate(0px, 0px);
+        /* transform: scale(1.4) rotate(90deg) translate(0px, 0px); */
+        transform:  rotate(90deg) ;
     }
 
     .show {
@@ -353,9 +357,10 @@ hr {
 
     nav {
         display: flex;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         height: 5rem;
         position: relative;
+        align-items: center;
     }
 
     .headshot {
