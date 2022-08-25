@@ -295,6 +295,22 @@ hr {
     animation: text-transform 7s steps(23) infinite alternate;
     border-right: 1px solid black;
 }
+
+
+
+.contacts a i{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 @keyframes text-transform {
     0%{
         width: 0ch;
