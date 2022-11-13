@@ -46,12 +46,15 @@
      font-size: 30px;
      font-weight: 300px;
      padding-top: 5px;
-     margin-top: 20px;
+     margin-top: 10px;
      cursor: pointer;
  }
 
+
+
  .button:hover {
      background-color: #ef744b98;
+     color: white;
  }
  .button:active {
      background-color: #A9A9A9;
@@ -75,8 +78,17 @@
  */
 
  .logo {
+    display: flex;
+    align-items:center ;
+    justify-content: center;
     position: relative;
  }
+
+ .logo-img {
+    width: 5rem;
+    display: flex;
+ }
+
  .hamburger {
     position: relative;
  }
@@ -205,17 +217,25 @@
      object-position: top;
      border-radius: 50%;
      padding: 1rem;
+     
  }
 
  .information {
      display: flex;
      flex-direction: column;
      text-align: center;
+     flex: 1;
  }
 
+ .information p {
+    font-size: 1rem;
+    margin-top: 10px;
+ }
  .headshot-container {
      display: flex;
      align-items: center;
+     flex:1;
+     justify-content: center;
  }
 
 
@@ -258,7 +278,7 @@
 
 .project-card:hover {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    transform: scale(1.02);
+    transform: scale(1.05);
    
 }
 
@@ -281,7 +301,7 @@
  }
 
 hr {
-    margin: 20px 20px;
+    margin: 10px 20px;
 }
 
 .hamburger {
@@ -294,6 +314,7 @@ hr {
     white-space: nowrap;
     animation: text-transform 7s steps(23) infinite alternate;
     border-right: 1px solid black;
+    margin: auto;
 }
 
 
@@ -301,6 +322,10 @@ hr {
 .contacts a i{
     font-size: 2.5rem;
     margin: 1rem;
+    transition: transform 0.5s;
+}
+.contacts a i:hover{
+    transform:  scale(1.2) rotate(360deg)  translate(0px, 0px);
 }
 
 .contacts {
@@ -308,6 +333,10 @@ hr {
     justify-content: center;
 }
 
+#about-me {
+    padding: 60px;
+    min-height: 100vh;
+}
 
 
 
@@ -328,8 +357,6 @@ hr {
         background-color: transparent;
         color: white;
         font-size: 30px;
-        /* margin: 20px; */
-        /* align-self: flex-end; */
         cursor: pointer;
         transition: transform 0.8s;
         position: relative;
@@ -385,6 +412,13 @@ hr {
         padding-right: 3rem;
     }
     
+}
+
+@media only screen and (max-width:750px) {
+    #about-me {
+        padding:20px 50px;
+        flex-direction: column-reverse;
+    }
 }
 
 @media only screen and (max-width:600px) {
@@ -457,7 +491,7 @@ hr {
     }
 }
 
-@media only screen and (max-width:300px) {
+@media only screen and (max-width:350px) {
     .hamburger {
         font-size: 1.5rem;
     }
@@ -472,7 +506,7 @@ hr {
         margin-left: 50px;
     }
     .socials {
-        margin-left: 50px;
+        margin-left: 5px;
     }
     nav.sticky {
         padding: 2rem 2rem;

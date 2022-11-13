@@ -17,5 +17,4 @@ hamburgerButton.addEventListener('click', toggleButton)
 window.addEventListener("scroll" , function() {
      var Nav = document.querySelector("nav");
      Nav.classList.toggle("sticky", window.scroll)
-     console.log("its not working")
 })
