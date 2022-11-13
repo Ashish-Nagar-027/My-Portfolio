@@ -475,23 +475,24 @@ hr {
 }
 
 
+
 @media only screen and (max-width:400px) {
     .hero-text h1 {
         font-size: 2.5rem;
         /* margin-top: 15rem; */
     }
+
     .hero-area {
         align-items: center;
         justify-content: center;
     }
+
     .socials {
         margin-top: 2rem;
         margin-bottom: 5rem;
         margin-left: -25px;
     }
-}
 
-@media only screen and (max-width:350px) {
     .hamburger {
         font-size: 1.5rem;
     }
@@ -505,9 +506,7 @@ hr {
     .hero-text {
         margin-left: 50px;
     }
-    .socials {
-        margin-left: 5px;
-    }
+    
     nav.sticky {
         padding: 2rem 2rem;
     }
