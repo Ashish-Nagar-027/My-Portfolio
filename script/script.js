@@ -1,20 +1,20 @@
 // hamburger
 
-const hamburgerButton = document.querySelector(".hamburger")
-const navList = document.querySelector("#nav-list")
-const logoNone = document.querySelector(".logo")
-function toggleButton(){
-    navList.classList.toggle('show')
-    logoNone.classList.toggle('logo-none')
-    
+const hamburgerButton = document.querySelector(".hamburger");
+const navList = document.querySelector("#nav-list");
+const logoNone = document.querySelector(".logo");
+function toggleButton() {
+  navList.classList.toggle("show");
+  logoNone.classList.toggle("logo-none");
 }
 
-hamburgerButton.addEventListener('click', toggleButton)
-
+hamburgerButton.addEventListener("click", toggleButton);
 
 // sticky navbar
 
-window.addEventListener("scroll" , function() {
-     var Nav = document.querySelector("nav");
-     Nav.classList.toggle("sticky", window.scroll)
-})
+window.addEventListener("scroll", function () {
+  var Nav = document.querySelector("nav");
+  Nav.classList.toggle("sticky", window.scroll);
+});
+
+ /* transform: scale(1.4) rotate(90deg) translate(0px, 0px); */

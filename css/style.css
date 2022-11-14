@@ -35,6 +35,7 @@
  
  .mb {
     margin-bottom: 1.4rem;
+    margin-top: 1.4rem;
  }
  
  .button {
@@ -260,7 +261,6 @@
  }
 
  .sub-section-2 h2 {
-     margin-bottom: 1.5rem;
      width: 80vw;
  }
  
@@ -365,7 +365,7 @@ hr {
 
     .hamburger:hover {
         transform: scale(1.5)  translate(0px, 0px);
-        /* transform: scale(1.4) rotate(90deg) translate(0px, 0px); */
+        transform: scale(1.4) rotate(90deg) translate(0px, 0px);
     }
 
     .show {
@@ -470,6 +470,10 @@ hr {
     .text {
     font-size: 1rem;
         
+    }
+    .hamburger:hover {
+        transform: scale(1.5)  translate(0px, 0px);
+        /* transform: scale(1.4) rotate(90deg) translate(0px, 0px); */
     }
 
 }
