@@ -49,6 +49,7 @@
      margin-top: 10px;
      cursor: pointer;
      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+     transition: all 0.2s ease-in-out;
  }
 
 
@@ -225,7 +226,11 @@
      object-position: top;
      border-radius: 50%;
      padding: 1rem;
-     
+     transition: all 0.3s ease-in-out;
+ }
+
+ .headshot:hover {
+    transform : scale(1.15) ;
  }
 
  .information {
@@ -281,12 +286,16 @@
     margin: 10px;
     padding-bottom: 20px;
     width: 300px;
+    background-color: #DDE2D4;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+
 }
 
 .project-card:hover {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    transform: scale(1.05);
-   
+    transform: scale(1.1);
+    background-color: inherit;
 }
 
  .sub-text {
@@ -299,7 +308,12 @@
      height: 157px;
      object-fit: cover;
      object-position: top;
+    transition: all 0.2s ease-in-out;
  }
+ .project-card:hover .project-img{
+    transform: scale(1.1) ;
+ }
+
  .btns {
      display: flex;
      align-items: center;
@@ -524,6 +538,11 @@ hr {
 
     .text {
         font-size: 0.7rem;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 0;
     }
 }
 
