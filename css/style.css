@@ -14,6 +14,7 @@
 
  html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
  ul {
@@ -75,6 +76,7 @@
      font-family: 'Poppins', sans-serif;
      overflow-y: scroll;
      overflow-x: hidden;
+     width: 100vw;
  }
 
  
@@ -395,7 +397,7 @@ hr {
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 6rem;
+        top: 5rem;
         width: 100%;
         transition: height 1s, transform 0.8s;
         padding: 10px 0px;
@@ -405,7 +407,7 @@ hr {
 
     nav ul {
         position: absolute;
-        top: 6rem;
+        top: 5rem;
         background-color:  #0e0f12ed;
         display: flex;
         flex-direction: column;
@@ -465,29 +467,29 @@ hr {
     .hero-area {
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: normal;
     }
     .socials {
         display: flex;
-        margin-left: 60px;
+        margin-left: 45px;
         padding-bottom: 3rem;
-        margin-top: 4rem;
+        margin-top: 0rem;
     }
     .hero-text {
         margin-bottom: 30px;
-        margin-top: 6rem;
+        margin-top: 5rem;
     }
     
     .hero-text h1 {
         margin-top: 5rem;
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
     }
     .hero-text p {
-        margin-bottom: 50px;
+        margin-bottom: 1rem;
     }
 
     .social {
-        margin: 20px 10px ;
+        margin: 1rem ;
     }
 
     footer p {
@@ -495,7 +497,7 @@ hr {
     }
 
     h1{
-        font-size: 50px;
+        font-size: 42px;
     }
 
     footer {
@@ -514,7 +516,14 @@ hr {
         transform: scale(1.5)  translate(0px, 0px);
         /* transform: scale(1.4) rotate(90deg) translate(0px, 0px); */
     }
+     
+    p {
+        font-size: 24px;
+    }
 
+    footer {
+        min-height: 50vh;
+    }
 }
 
 
@@ -531,9 +540,8 @@ hr {
     }
 
     .socials {
-        margin-top: 2rem;
         margin-bottom: 5rem;
-        margin-left: -25px;
+        margin-left: -30px;
     }
 
     .hamburger {
@@ -565,3 +573,10 @@ hr {
 }
 
 
+@media only screen and (max-width:350px) {
+    .socials {
+        margin-left: 20px;
+    }
+
+
+}
