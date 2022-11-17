@@ -10,11 +10,3 @@ function toggleButton() {
 
 hamburgerButton.addEventListener("click", toggleButton);
 
-// sticky navbar
-
-window.addEventListener("scroll", function () {
-  var Nav = document.querySelector("nav");
-  Nav.classList.toggle("sticky", window.scroll);
-});
-
- /* transform: scale(1.4) rotate(90deg) translate(0px, 0px); */

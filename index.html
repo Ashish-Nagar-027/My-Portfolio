@@ -23,28 +23,31 @@
     <!-- font Awesome here -->
     <script src="https://kit.fontawesome.com/2e253139a8.js" crossorigin="anonymous"></script>
     <!-- font awesome ends here -->
+    <!-- animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animate on scroll library ends -->
   </head>
   <body>
+    <nav data-aos="fade-down" >
+      <div class="logo" data-aos="fade-down" data-aos-delay="100"  ><a href="./"><img src="/images/white-logo.png" class="logo-img" /></div>
+      <ul id="nav-list">
+        <li ><a href="#about-me">About me</a></li>
+        <li ><a href="#projects">Projects</a></li>
+        <li ><a href="#contact-me">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" data-aos="fade-down" data-aos-delay="100">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
     <section id="home" class="hero">
-      <nav>
-        <div class="logo"><a href="./"><img src="/images/white-logo.png" class="logo-img" /></div>
-        <ul id="nav-list">
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact-me">Contact</a></li>
-        </ul>
-        <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
-      </nav>
       <div class="hero-area">
-        <div class="hero-text">
-          <h1>Ashish Nagar</h1>
-          <p>Front-End Deveoper</p>
-          <div class="button"><a href="#about-me">Download Resume</a></div>
+        <div class="hero-text" data-aos="fade-down">
+          <h1 data-aos="fade-right" data-aos-delay="200" >Ashish Nagar</h1>
+          <p data-aos="fade-right" data-aos-delay="600">Front-End Deveoper</p>
+          <div class="button" data-aos="fade-right" data-aos-delay="1000" ><a href="#about-me">Download Resume</a></div>
         </div>
         <div class="socials">
-          <div class="social-icon">
+          <div class="social-icon" data-aos="fade-left"  data-aos-delay="1400" >
             <a href="https://twitter.com/Ashish_Nagar_" class="social" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +62,7 @@
               </svg>
             </a>
           </div>
-          <div class="social-icon">
+          <div class="social-icon"  data-aos="fade-left" data-aos-delay="1700">
             <a href="https://github.com/Ashish-Nagar-027" class="social" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +77,7 @@
               </svg>
             </a>
           </div>
-          <div class="social-icon">
+          <div class="social-icon" data-aos="fade-left" data-aos-delay="2000">
             <a href="https://www.instagram.com/ashish.nagar.798" class="social" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,79 +96,95 @@
       </div>
     </section>
     <section class="sub-section" id="about-me">
-        <div class="information">
+        <div class="information" data-aos="zoom-in-right">
             <h2>About Me</h2>
             <h3 class="text">Hey, My name is Ashish Nagar</h3>
               <p> I'm a Front-End Web developer from India. I am 21 year old bsc graduate. I really enjoy learning languages and frameworks like Tailwind and React etc. I'm passionate about innovative technologies and how to build them.</p>
         </div>
-        <div class="headshot-container">
+        <div class="headshot-container" data-aos="flip-left"  data-aos-delay="1000">
             <img class="headshot" src="./images/Ashish.jpg" alt="Ashish Nagar">
         </div>
     </section>
     <section class="sub-section-2" id="projects">
         <h2>Projects</h2>
-        <p class="mb">Html and CSS Projects</p>
         <div class="project-container">
-            <div class="project-card">
-                <img class="project-img" src="./images/projects/11-min.png" alt="project image">
-                <h3>Project Eleven</h3>
-                <p class="subtext">Hosting Landing Page</p>
+          <div data-aos="flip-left">
+            <div class="project-card" >
+                <img class="project-img" src="./images/projects/pexels-api.PNG" alt="project image">
+                <h3>Html/Css/Js</h3>
+                <p class="subtext">Pexels Api Project</p>
                 <hr>
                 <div class="btns">
-                  <div class="button"><a href="https://github.com/Ashish-Nagar-027/html-and-css-project-11" target="_blank">Github</a></div>
-                  <div class="button"><a href="https://ashish-nagars-html-css-project-11.netlify.app/" target="_blank">Live preview</a></div>
+                  <div class="button"><a href="https://github.com/Ashish-Nagar-027/Pexel-photos" target="_blank">Github</a></div>
+                  <div class="button"><a href="https://pexel-photos-by-ashish-nagar.netlify.app/" target="_blank">Live preview</a></div>
                 </div>
             </div>
-            <div class="project-card">
-                <img class="project-img" src="./images/projects/12-min.png" alt="project image">
-                <h3>Project Twelve</h3>
-                <p class="subtext">Business Landing Page</p>
+          </div>
+          <div data-aos="flip-up" data-aos-delay="350"> 
+            <div class="project-card" >
+                <img class="project-img" src="./images/projects/react-Capture.PNG" alt="project image">
+                <h3>React Project</h3>
+                <p class="subtext">Capture portfolio</p>
                 <hr>
                 <div class="btns">
                   <div class="button"><a href="https://github.com/Ashish-Nagar-027/html-and-css-project-12" target="_blank">Github</a></div>
                   <div class="button"><a href="https://ashish-nagars-html-css-project-12.netlify.app/" target="_blank">Live preview</a></div>
                 </div>
             </div>
+          </div>
+          <div  data-aos="flip-right" data-aos-delay="700">
             <div class="project-card">
+              <img class="project-img" src="./images/projects/Tailwind-shopify.PNG" alt="project image">
+              <h3>Shopify Home page clone</h3>
+              <p class="subtext">Tailwind project</p>
+              <hr>
+              <div class="btns">
+                <div class="button"><a href="https://github.com/Ashish-Nagar-027/shopify-clone-with-tailwind" target="_blank">Github</a></div>
+                <div class="button"><a href="https://shopify-clone-by-ashish.netlify.app/" target="_blank">Live preview</a></div>
+              </div>
+           </div>
+          </div>
+          <div  data-aos="flip-right" data-aos-delay="1050">
+           <div class="project-card" >
+            <img class="project-img" src="./images/projects/tailwind-road.PNG" alt="project image">
+            <h3>Tailwind project</h3>
+            <p class="subtext">Road.com Home page clone</p>
+            <hr>
+            <div class="btns">
+              <div class="button"><a href="https://github.com/Ashish-Nagar-027/Rode.com-clone-with-tailwind" target="_blank">Github</a></div>
+              <div class="button"><a href="https://rode-clone-with-tailwind.netlify.app/" target="_blank">Live preview</a></div>
+            </div>
+          </div>
+        </div>
+        <div  data-aos="flip-down" data-aos-delay="1300">
+            <div class="project-card" >
                 <img class="project-img" src="./images/projects/15-min.png" alt="project image">
                 <h3>Project Fifteen</h3>
-                <p class="subtext">Product Design LandingPage</p>
+                <p class="subtext">Product Designer landingPage</p>
                 <hr>
                 <div class="btns">
                   <div class="button"><a href="https://github.com/Ashish-Nagar-027/html-and-css-project-15" target="_blank">Github</a></div>
                   <div class="button"><a href="https://ashish-nagars-html-css-project-15.netlify.app/" target="_blank">Live preview</a></div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <p class="mb">Tailwind Css Projects</p>
-        <div class="project-container">
-          <div class="project-card">
-            <img class="project-img" src="./images/projects/Tailwind-shopify.PNG" alt="project image">
-            <h3>Shopify Home page clone</h3>
-            <p class="subtext">Tailwind project</p>
+          </div>
+          <div  data-aos="flip-left" data-aos-delay="1650">
+          <div class="project-card" >
+            <img class="project-img" src="./images/projects/11-min.png" alt="project image">
+            <h3>Html/Css</h3>
+            <p class="subtext">Hosting Landing Page</p>
             <hr>
             <div class="btns">
-              <div class="button"><a href="https://github.com/Ashish-Nagar-027/shopify-clone-with-tailwind" target="_blank">Github</a></div>
-              <div class="button"><a href="https://shopify-clone-by-ashish.netlify.app/" target="_blank">Live preview</a></div>
+              <div class="button"><a href="https://github.com/Ashish-Nagar-027/html-and-css-project-11" target="_blank">Github</a></div>
+              <div class="button"><a href="https://ashish-nagars-html-css-project-11.netlify.app/" target="_blank">Live preview</a></div>
             </div>
-         </div>
-          <div class="project-card">
-            <img class="project-img" src="./images/projects/tailwind-road.PNG" alt="project image">
-            <h3>Road.com Home page clone</h3>
-            <p class="subtext">Tailwind project</p>
-            <hr>
-            <div class="btns">
-              <div class="button"><a href="https://github.com/Ashish-Nagar-027/Rode.com-clone-with-tailwind" target="_blank">Github</a></div>
-              <div class="button"><a href="https://rode-clone-with-tailwind.netlify.app/" target="_blank">Live preview</a></div>
-            </div>
-         </div>
         </div>
+      </div>
     </section>
     <footer id="contact-me">
-      <h1>Contact Me</h1>
-      <p>You can connect me through:</p>
-      <div class="contacts">
+      <h1 data-aos="fade-left">Contact Me</h1>
+      <p data-aos="fade-right">You can connect me through:</p>
+      <div class="contacts" data-aos="zoom-in" data-aos-delay="350">
         <a href="mailto:ashishnagar033@gmail.com"><i class="fa-solid fa-envelope"></i></a>   
          <a href="https://twitter.com/Ashish_Nagar_" class="" target="_blank">
           <i class="fa-brands fa-twitter"></i></a>
@@ -176,4 +195,12 @@
       </div>
     </footer>
   </body>
+  <!-- Animate on scroll  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay:200,
+      duration:1500,
+    });
+  </script>
 </html>

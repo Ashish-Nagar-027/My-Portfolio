@@ -73,6 +73,8 @@
 
  body {
      font-family: 'Poppins', sans-serif;
+     overflow-y: scroll;
+     overflow-x: hidden;
  }
 
  
@@ -90,7 +92,7 @@
  }
 
  .logo-img {
-    width: 5rem;
+    width: 4.5rem;
     display: flex;
     transition: all 0.5s ease-in-out;
  }
@@ -126,28 +128,19 @@
  nav {
      display: flex;
      justify-content: space-between;
-     padding: 2rem 4rem;
+     padding: 1rem 4rem;
      position: fixed;
-     top: 0;
+     top: 0px;
      width: 100vw;
      height: 5rem;
      align-items: center;
+     background-color: #242B2E;
+     z-index: 5;
+     color: white;
+    
  }
 
- nav.sticky {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    background-color: #242B2E;
-    width: 100vw;
-    margin: 0;
-    z-index: 5;
-    top: 0px;
-    align-items: center;
-    padding:2rem 4rem;
-    height:6rem
-
- }
+ 
 
  .hero-text h1 {
     margin-top: 5rem;
@@ -157,7 +150,7 @@
      display: flex;
      justify-content:space-around ; 
      width: 500px;
-     font-size: 30px;
+     font-size: 25px;
  }
  
  #nav-list li {
@@ -197,9 +190,14 @@
  }
 
  .social-icon {
-    transition: transform 0.5s;
+    transition: transform 0.5s ease-in-out;
  }
- .social-icon:hover {
+
+ .social-icon a svg:hover {
+    transition: transform 0.5s ease-in-out;
+
+ }
+ .social-icon a svg:hover {
     transform:  scale(1.2) rotate(360deg)  translate(0px, 0px);
     
  }
@@ -261,6 +259,9 @@
      justify-content: space-around;
      flex-wrap: wrap;
      width: 80vw;  
+     gap : 20px 10px;
+     margin-top: 10px;
+
  }
 
  .sub-section-2 {
@@ -340,10 +341,10 @@ hr {
 
 
 
-.contacts a i{
+.contacts a i {
     font-size: 2.5rem;
     margin: 1rem;
-    transition: transform 0.5s;
+    transition :  transform 1s;
 }
 .contacts a i:hover{
     transform:  scale(1.2) rotate(360deg)  translate(0px, 0px);
@@ -422,7 +423,7 @@ hr {
         display: flex;
         /* align-items: flex-start; */
         height: 5rem;
-        position: relative;
+        position: fixed;
         align-items: center;
     }
 
@@ -432,6 +433,23 @@ hr {
     .hero-text h1 {
         padding-right: 3rem;
     }
+
+    .project-container {
+        gap : 20px 10px
+    }
+
+    .hero-text h1 {
+        margin-top: 0rem;
+    }
+    h1 {
+        font-size: 80px ;
+    }
+
+    .hero-text {
+        margin-top: 0rem;
+    }
+    
+
     
 }
 
