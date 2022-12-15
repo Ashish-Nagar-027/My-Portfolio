@@ -310,6 +310,7 @@ ul {
   padding: 80px;
   max-height: fit-content;
   overflow: hidden;
+  background-color: #dde2d4;
 }
 
 .sub-section-2::before {
@@ -322,7 +323,7 @@ ul {
 
   background-size: 80px 80px;
   background-repeat: repeat;
-  animation: project-bg linear 50s infinite;
+  animation: project-bg linear 170s infinite;
 }
 
 .sub-section-2 h2 {
@@ -344,7 +345,8 @@ ul {
   margin: 10px;
   padding-bottom: 20px;
   width: 300px;
-  background-color: #dde2d4;
+  /* background-color: #dde2d4; */
+  background-color: inherit;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
 }
@@ -353,12 +355,20 @@ ul {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   transform: scale(1.1);
   /* background-color: inherit; */
-  background-color: whitesmoke;
+  background-color: #dde2d4;
 }
 
 .sub-text {
   font-size: 15px;
   font-weight: 300;
+  background-color: #dde2d4;
+}
+.project-card h3 {
+  background-color: #dde2d4;
+}
+
+.subtext {
+  background-color: #dde2d4;
 }
 
 .project-img {
