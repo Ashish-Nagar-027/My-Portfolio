@@ -525,6 +525,10 @@ hr {
     top: -30px;
     left: 10px;
   }
+
+  .socials {
+    margin-top: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -560,7 +564,7 @@ hr {
   }
 
   .social {
-    margin: 1rem;
+    margin: 0.5rem;
   }
 
   footer p {
@@ -615,7 +619,7 @@ hr {
 
   .socials {
     margin-bottom: 5rem;
-    margin-left: -30px;
+    margin-left: 5px;
   }
 
   .hamburger {
