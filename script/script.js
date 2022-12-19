@@ -41,9 +41,32 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // hamburger
 function toggleButton() {
-  navList.classList.toggle("show");
-  hamburgerButton.classList.toggle('ham-clicked')
+  if(navList.classList.contains("show")){
+    navList.classList.remove("show")
+     hamburgerButton.classList.remove('ham-clicked')
+  }
+  else{
+    navList.classList.add("show")
+    hamburgerButton.classList.add('ham-clicked')
+
+  }
+  // navList.classList.toggle("show");
+ 
   logoNone.classList.toggle("logo-none");
 }
 
 hamburgerButton.addEventListener("click", toggleButton);
+
+
+// remove
+navList.addEventListener('click',(e)=> {
+  console.log(e.target.tagName)
+  if(e.target.tagName == "A") {
+    if(navList.classList.contains("show")){
+      navList.classList.remove("show")
+      hamburgerButton.classList.remove('ham-clicked')
+    }
+
+  }
+
+})
