@@ -42,6 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // hamburger
 function toggleButton() {
   navList.classList.toggle("show");
+  hamburgerButton.classList.toggle('ham-clicked')
   logoNone.classList.toggle("logo-none");
 }
 
