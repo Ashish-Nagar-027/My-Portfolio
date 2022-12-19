@@ -17,8 +17,7 @@
     <!-- Css Here -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- css end -->
-    <!-- javaScript here -->
-    <script src="./script/script.js" defer></script>
+   
     <!-- js end -->
     <!-- font Awesome here -->
     <script src="https://kit.fontawesome.com/2e253139a8.js" crossorigin="anonymous"></script>
@@ -28,7 +27,15 @@
     <!-- animate on scroll library ends -->
   </head>
   <body>
-    <nav data-aos="fade-down" >
+    <!-- main hero section -->
+    <div class="main-hero-area">
+      <!-- particle js -->
+      <div class="particle-js-div">
+        <div  class="particles-js" id="particles-js"></div>
+      </div>
+      <!-- particle js ends here -->
+      <!-- navbar here -->
+    <nav data-aos="fade-down" id="nav" >
       <div class="logo" data-aos="fade-down" data-aos-delay="100"  ><a href="./"><img src="/images/white-logo.png" class="logo-img" /></div>
       <ul id="nav-list">
         <li ><a href="#about-me">About me</a></li>
@@ -39,15 +46,17 @@
         <i class="fas fa-bars"></i>
       </button>
     </nav>
+    <!-- navbar ends here -->
     <section id="home" class="hero">
       <div class="hero-area">
         <div class="hero-text" data-aos="fade-down">
           <h1 data-aos="fade-right" data-aos-delay="200" >Ashish Nagar</h1>
-          <p data-aos="fade-right" data-aos-delay="600">Front-End Deveoper</p>
-          <div class="button" data-aos="fade-right" data-aos-delay="1000" ><a href="https://drive.google.com/file/d/1l0wDgspjRrYlkmoWKfO3KxQTYsGvdt_B/view" target="_blank">Download Resume</a></div>
+          <p data-aos="fade-right" data-aos-delay="500">Front-End Deveoper</p>
+          <div class="button" data-aos="fade-right" data-aos-delay="900" ><a href="https://drive.google.com/file/d/1l0wDgspjRrYlkmoWKfO3KxQTYsGvdt_B/view" target="_blank">Download Resume</a></div>
         </div>
+        <!-- hero area side social icons -->
         <div class="socials">
-          <div class="social-icon" data-aos="fade-left"  data-aos-delay="1400" >
+          <div class="social-icon" data-aos="fade-left"  data-aos-delay="1200" >
             <a href="https://twitter.com/Ashish_Nagar_" class="social" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +71,7 @@
               </svg>
             </a>
           </div>
-          <div class="social-icon"  data-aos="fade-left" data-aos-delay="1700">
+          <div class="social-icon"  data-aos="fade-left" data-aos-delay="1500">
             <a href="https://github.com/Ashish-Nagar-027" class="social" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +86,7 @@
               </svg>
             </a>
           </div>
-          <div class="social-icon" data-aos="fade-left" data-aos-delay="2000">
+          <div class="social-icon" data-aos="fade-left" data-aos-delay="1800">
             <a href="https://www.instagram.com/that_one_dude_277" class="social" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,6 +104,9 @@
         </div>
       </div>
     </section>
+  </div>
+  <!-- main hero section -->
+  <!-- About me Section here -->
     <section class="sub-section" id="about-me">
         <div class="information" data-aos="zoom-in-right">
             <h2>About Me</h2>
@@ -102,9 +114,10 @@
               <p> I'm a Front-End Web developer from India. I am 21 year old bsc graduate. I really enjoy learning languages and frameworks like Tailwind and React etc. I'm passionate about innovative technologies and how to build them.</p>
         </div>
         <div class="headshot-container" data-aos="flip-left"  data-aos-delay="1000">
-            <img class="headshot" src="./images/Ashish.jpg" alt="Ashish Nagar">
+          <img class="headshot" src="./images/Ashish.jpg" alt="Ashish Nagar">
         </div>
-    </section>
+      </section>
+      <!-- projects section starts here -->
     <section class="sub-section-2" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
@@ -181,6 +194,8 @@
         </div>
       </div>
     </section>
+    <!-- projects section ends here -->
+    <!-- footer section here -->
     <footer id="contact-me">
       <h1 data-aos="fade-left">Contact Me</h1>
       <p data-aos="fade-right">You can connect me through:</p>
@@ -202,5 +217,10 @@
       delay:200,
       duration:1500,
     });
-  </script>
+    </script>
+    <!-- particles js files -->
+    <script type="text/javascript" src="particle js/particles.min.js"></script>
+    <script type="text/javascript" src="particle js/app.js"></script>
+    <!-- javaScript here -->
+    <script src="./script/script.js" defer></script>
 </html>
