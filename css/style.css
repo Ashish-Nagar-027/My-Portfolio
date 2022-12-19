@@ -112,6 +112,8 @@ body {
   justify-content: center;
   position: relative;
   display: none;
+  transition: all 5s ease-in-out;
+
 }
 
 .logo-img {

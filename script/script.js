@@ -15,8 +15,10 @@ var myScrollFunc = function () {
   let heroHeight = mainHeroAreaHeignt.height - navHeignt.height;
   if (y >= heroHeight) {
     document.getElementById("nav").style.background = "#242B2E";
+    logoNone.style.display = 'flex'
   } else {
     document.getElementById("nav").style.background = "transparent";
+    logoNone.style.display = 'none'
   }
 };
 
