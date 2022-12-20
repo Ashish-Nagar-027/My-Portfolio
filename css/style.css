@@ -180,10 +180,13 @@ ul {
 #nav-list li {
   text-decoration: none;
   padding: 0.3rem 0.5rem;
+  border-radius: 2rem;
+  margin:2px;
+  background:rgb(36, 43, 46)
 }
 #nav-list li:hover {
   background: #ef744b;
-  border-radius: 2rem;
+
   color: white;
   transition: linear 0.1s;
 }
