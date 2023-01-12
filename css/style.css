@@ -85,13 +85,15 @@ p {
 body {
   font-family: "Kaushan Script", cursive;
   max-width: 100vw;
+  overflow-x: hidden;
 }
 
 
 #particles-js {
   background-size: cover;
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 .particle-js-div {
   position: absolute;
@@ -110,6 +112,12 @@ body {
     section
 ===================
  */
+
+ .main-hero-area {
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+ }
 
 .logo {
   display: flex;
