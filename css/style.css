@@ -13,19 +13,23 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
+
 ul {
   list-style-type: none;
 }
+
 
 h1 {
   font-size: 90px;
   font-family: "Kaushan Script", cursive;
 }
+
 
 h2 {
   font-size: 50px;
@@ -41,6 +45,7 @@ a {
   margin-bottom: 1.4rem;
   margin-top: 1.4rem;
 }
+
 
 .button {
   width: fit-content;
@@ -58,9 +63,9 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
+
 .button:hover {
   color: white;
-  /* background-color: #bf6544; */
   background-color: #fb936d;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -70,18 +75,17 @@ a {
   color: #808080;
 }
 
+
 p {
   font-size: 30px;
   font-weight: 300;
 }
 
+
 body {
-  font-family: "Poppins", sans-serif;
   font-family: "Kaushan Script", cursive;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  width: 100vw;
 }
+
 
 #particles-js {
   background-size: cover;
@@ -135,7 +139,7 @@ section {
 
 /* header section */
 .hero {
-  background-color: #242b2e;
+  background-color: #101727;
   height: fit-content;
   color: white;
   font-size: 40px;
@@ -143,7 +147,7 @@ section {
 }
 
 footer {
-  background-color: #242b2e;
+  background-color: #101727;
   color: white;
   text-align: center;
   padding: 80px;
@@ -177,19 +181,22 @@ ul {
   font-size: 25px;
 }
 
+
 #nav-list li {
   text-decoration: none;
   padding: 0.3rem 0.5rem;
   border-radius: 2rem;
   margin:2px;
-  background:rgb(36, 43, 46)
+  background:#101727
 }
+
+
 #nav-list li:hover {
   background: #ef744b;
-
   color: white;
   transition: linear 0.1s;
 }
+
 
 .hero-text {
   margin-top: 4rem;
@@ -198,6 +205,8 @@ ul {
   z-index: 2;
   font-family: "Kaushan Script", cursive;
 }
+
+
 .hero-text::before {
   content: "Hi There 👋 , I ";
   position: absolute;
@@ -222,16 +231,14 @@ ul {
   height: 100%;
   width: 100%;
   position: absolute;
-
   animation: hero-bg;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-delay: 5s;
   animation-fill-mode: forwards;
 
-  /* background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); */
-
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+
 }
 
 @keyframes hero-bg {
@@ -310,6 +317,10 @@ ul {
   flex: 1;
 }
 
+.information h2 {
+  color: #0c2152;
+}
+
 .information p {
   font-size: 1rem;
   margin-top: 10px;
@@ -343,6 +354,7 @@ ul {
   max-height: fit-content;
   overflow: hidden;
   background-color: #dde2d4;
+  color: #0c2152;
 }
 
 .sub-section-2::before {
@@ -356,6 +368,7 @@ ul {
   background-size: 80px 80px;
   background-repeat: repeat;
   animation: project-bg linear 170s infinite;
+
 }
 
 .sub-section-2 h2 {
@@ -532,7 +545,7 @@ hr {
   padding: 10px 0px;
   height: 170px;
   left: 0;
-  background: rgba(36, 43, 46, 0.6);
+  background: #101727bb;
 }
 
 nav ul {
@@ -548,12 +561,11 @@ nav ul {
   transition: height 1s, transform 1s;
   color: #ef744b;
   left: 0;
-  background: rgba(36, 43, 46, 0.9);
+  background: #101727bb;
 }
 
 nav {
   display: flex;
-  /* align-items: flex-start; */
   height: 4.5rem;
   position: fixed;
   align-items: center;
