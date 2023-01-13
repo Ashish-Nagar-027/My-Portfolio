@@ -75,6 +75,11 @@ a {
   color: #808080;
 }
 
+.more-button {
+  z-index: 1;
+  margin-top: 1rem;
+}
+
 
 p {
   font-size: 30px;
@@ -160,6 +165,11 @@ footer {
   color: white;
   text-align: center;
   padding: 80px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 nav {
@@ -347,10 +357,100 @@ ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 100%;
   gap: 20px 10px;
   margin-top: 10px;
 }
+
+.project-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #0c2152;
+  background-color: #dde2d4;
+  padding: 1.5rem 0rem;
+}
+
+/* ============================= */
+/*        tablet  screen */
+/* ============================= */
+
+
+.display-screens{
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  gap: 1.5rem;
+} 
+
+.display-screens div{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+} 
+
+.tablet {
+  position: relative;
+  width: 456px;
+  height: 600px;
+  background-image: url('../images/projects/ipad-optimised.png');
+  border: 1px solid #042743;
+  transition: all 1s ;
+  
+}
+
+
+.tablet:hover {
+  transform: scale(1.01);
+}
+
+
+.tablet iframe {
+  border-radius: 10px;
+    top: 63px;
+    left: 70px;
+    width: 768px;
+    height: 1024px;
+    overflow-y: hidden;
+    transform: scale(0.41);
+    transform-origin: left top;
+    position: relative;
+    background-color: whitesmoke;
+}
+
+.project-links {
+  width: 90%;
+  left: 5%;
+  position: absolute;
+  bottom: 5px;
+}
+
+.project-links hr {
+  margin: auto;
+}
+
+
+
+#projects-display-container-2{
+  display: none;
+  height: 0;
+  transition: height 1s ease-in-out;
+}
+
+#projects-display-container-2.show-extra-projects  {
+  display: flex;
+  height: fit-content;
+  transition: height 1s ease-in-out;
+}
+
+
+/* ============================= */
+/* ============================= */
 
 .sub-section-2 {
   display: flex;
@@ -364,6 +464,12 @@ ul {
   overflow: hidden;
   background-color: #dde2d4;
   color: #0c2152;
+  min-height: 100vh;
+}
+
+#articles .project-container {
+  width: 80vw;
+  margin: 1.5rem 0rem;
 }
 
 .sub-section-2::before {
@@ -372,11 +478,13 @@ ul {
   height: 800vh;
   position: absolute;
   top: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%231e1b23' fill-opacity='0.16' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%231e1b23' fill-opacity='0.16' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E"); */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23042743' fill-opacity='0.4' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
 
-  background-size: 80px 80px;
+  background-size: 90px 90px;
   background-repeat: repeat;
-  animation: project-bg linear 170s infinite;
+  animation: project-bg linear 70s infinite;
+  animation-delay: 4s;
 
 }
 
@@ -399,7 +507,7 @@ ul {
   margin: 10px;
   padding-bottom: 20px;
   width: 300px;
-  /* background-color: #dde2d4; */
+  background-color: #dde2d4;
   background-color: inherit;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
@@ -407,8 +515,7 @@ ul {
 
 .project-card:hover {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  transform: scale(1.1);
-  /* background-color: inherit; */
+  transform: scale(1.05);
   background-color: #dde2d4;
 }
 
@@ -464,10 +571,11 @@ hr {
 .contacts a i {
   font-size: 2.5rem;
   margin: 1rem;
-  transition: transform 1s;
+  transition: all 1s ;
 }
 .contacts a i:hover {
   transform: scale(1.2) rotate(360deg) translate(0px, 0px);
+  color: #ef744b;
 }
 
 .contacts {
@@ -552,7 +660,7 @@ hr {
   width: 100%;
   transition: height 1s, transform 0.8s;
   padding: 10px 0px;
-  height: 170px;
+  height: 300px;
   left: 0;
   background: #101727bb;
 }
@@ -662,6 +770,7 @@ nav {
 
   footer {
     padding: 50px 40px;
+    
   }
 
   ul li {
@@ -686,6 +795,44 @@ nav {
     left: 10px;
     font-size: 20px;
   }
+
+  .tablet {
+    width: 350px;
+    height: 500px;
+   }
+ 
+   .tablet iframe {
+     top: 46px;
+     left: 52px;
+     transform: scale(0.499);
+   }
+ 
+   .tablet iframe { 
+     width: 482px;
+     height: 640px;
+   }
+}
+
+@media only screen and (max-width: 450px) {
+  .display-screens {
+    padding: 1rem 0px;
+  }
+  .tablet {
+   width: 270px;
+   height: 430px;
+  }
+
+  .tablet iframe {
+    top: 36px;
+    left: 42px;
+    transform: scale(0.399);
+  }
+
+  .tablet iframe { 
+    width: 482px;
+    height: 640px;
+  }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -730,6 +877,8 @@ nav {
     flex-direction: column;
     gap: 0;
   }
+
+ 
 }
 
 @media only screen and (max-width: 350px) {
