@@ -31,9 +31,11 @@ window.addEventListener("scroll", myScrollFunc);
 // background animation
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
+    
     transform: document.querySelector(".particles-js-canvas-el").style.transform =
       "translate(0%, 0%)";
     document.querySelector(".particles-js-canvas-el").style.width = "100%";
+    hamburgerButton.style.display = 'block'
   }, 5000);
 })
 
@@ -63,13 +65,25 @@ navList.addEventListener('click',(e)=> {
       navList.classList.remove("show")
       hamburgerButton.classList.remove('ham-clicked')
     }
-
   }
-
 })
+
+// ityped library
+window.ityped.init(document.querySelector(".ityped"), {
+  strings: [
+    "Front-End Developer",
+    "javaScript Developer",
+    "UI/UX Developer",
+  ],
+  loop: true,
+  typeSpeed: 150,
+  startDelay: 2000,
+  showCursor: false,
+});
 
 // =================================================
 // all  projects  display
+
 let projectDetailsArray = [
   {
     name : 'project 1',
@@ -95,103 +109,33 @@ let projectDetailsArray = [
     techStack : 'Tailwind',
     github: 'https://github.com/Ashish-Nagar-027/shopify-clone-with-tailwind'
 
-  },
-  {
-    name : 'project 5',
-    url : 'https://js-time-player-by-ashish-nagar.netlify.app/',
-    techStack : 'javaScript',
-    github: 'https://github.com/Ashish-Nagar-027/Js-Time-Player'
-  },
-  {
-    name : 'project 6',
-    url : 'https://random-quotes-and-jokes-generator.netlify.app/',
-    techStack : 'javaScript',
-    github: 'https://github.com/Ashish-Nagar-027/Js-Quote-and-joke-generator'
-  },
-  {
-    name : 'project 7',
-    url : 'https://video-player-with-js.netlify.app/',
-    techStack : 'javaScript',
-    github: 'https://github.com/Ashish-Nagar-027/video-player-with-javaScript'
-  },
-  {
-    name : 'project 8',
-    url : 'https://js-word-player-by-ashish-nagar.netlify.app/',
-    techStack : 'javaScript',
-    github: 'https://github.com/Ashish-Nagar-027/Js-word-player'
-  },
-  {
-    name : 'project 9',
-    url : 'https://rode-clone-with-tailwind.netlify.app/',
-    techStack : 'Tailwind',
-    github: 'https://github.com/Ashish-Nagar-027/Rode.com-clone-with-tailwind'
-  },
-  {
-    name : 'project 10',
-    url : 'https://ashish-nagars-html-css-project-12.netlify.app/',
-    techStack : 'javaScript',
-    github: 'https://github.com/Ashish-Nagar-027/html-and-css-project-12'
-  },
-  {
-    name : 'project 11',
-    url : 'https://ashish-nagars-html-css-project-11.netlify.app/',
-    techStack : 'javaScript',
-    github: 'https://github.com/Ashish-Nagar-027/html-and-css-project-11'
-  },
-  {
-    name : 'project 12',
-    url : 'https://todo-list-with-js-by-ashish-nagar.netlify.app/',
-    techStack : 'javaScript',
-    github: 'https://github.com/Ashish-Nagar-027/JS-Todo-List-Project'
-  },
+  }
 ]
 
 
 const projectContainerDiv = document.getElementById('projects-display-container')
-const projectContainerDiv_2 = document.getElementById('projects-display-container-2')
 
-showMoreProjectsBtn.addEventListener('click', ()=> {
-  if(projectContainerDiv_2.classList.contains('show-extra-projects')){
-    projectContainerDiv_2.classList.remove('show-extra-projects')
-    showMoreProjectsBtn.innerText = 'show more'
-  } 
-  else {
-    showMoreProjectsBtn.innerText = 'Hide more'
-    projectContainerDiv_2.classList.add('show-extra-projects')
-  }
-})
+projectDetailsArray.map((projectItem) => {
 
-function createProject(project,AddOn,attributeName){
+    const projectsDispley = document.createElement('div')
 
-  const projectsDispley = document.createElement('div')
-
-  projectsDispley.setAttribute('class', attributeName)
-
-  projectsDispley.innerHTML = `
-  <div class="tablet ">
-    <div class="trim">
-      <iframe  src="${project.url}" alt="project image"></iframe>
+    projectsDispley.setAttribute('class', 'main-projects')
+  
+    projectsDispley.innerHTML = `
+    <div class="tablet ">
+      <div class="trim">
+        <iframe  src="${projectItem.url}" alt="project image"></iframe>
+      </div>
+      <div class="project-links">
+          <hr>
+          <div class="btns">
+            <div class="button"><a href="${projectItem.github}" target="_blank" >Github</a></div>
+            <div class="button"><a href="${projectItem.url}" target="_blank" >Live preview</a></div>
+          </div>
+      </div>
     </div>
-    <div class="project-links">
-        <hr>
-        <div class="btns">
-          <div class="button"><a href="${project.github}" target="_blank" >Github</a></div>
-          <div class="button"><a href="${project.url}" target="_blank" >Live preview</a></div>
-        </div>
-    </div>
-  </div>
-`
-  AddOn.appendChild(projectsDispley)
-}
-
-
-projectDetailsArray.map((projectItem,i) => {
-  if (i < 4) {
-    createProject(projectItem,projectContainerDiv,'main-projects')
-  }
-  else {
-  createProject(projectItem,projectContainerDiv_2,'extraa-projects')
-  }
+  `
+  projectContainerDiv.appendChild(projectsDispley)
 })
 
 

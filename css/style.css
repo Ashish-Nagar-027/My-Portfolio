@@ -555,19 +555,6 @@ hr {
   margin: 10px 20px;
 }
 
-.hamburger {
-  display: none;
-}
-
-.text {
-  width: 0ch;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: text-transform 7s steps(23) infinite alternate;
-  border-right: 1px solid black;
-  margin: auto;
-}
-
 .contacts a i {
   font-size: 2.5rem;
   margin: 1rem;
@@ -589,19 +576,10 @@ hr {
   font-family: "Poppins", sans-serif;
 }
 
-@keyframes text-transform {
-  0% {
-    width: 0ch;
-  }
-  50% {
-    width: 23ch;
-  }
-}
-
 
 /* hamburger */
 .hamburger {
-  display: block;
+  display: none;
   border: 0;
   background-color: transparent;
   color: white;
@@ -611,7 +589,6 @@ hr {
   position: relative;
   align-items: center;
   margin-right: 12px;
-
 }
 
 .hamburger.ham-clicked{
@@ -722,6 +699,10 @@ nav {
   .socials {
     margin-top: 1.5rem;
   }
+}
+
+.ityped {
+  color: #0c2152;
 }
 
 @media only screen and (max-width: 750px) {
