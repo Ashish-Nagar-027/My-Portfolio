@@ -77,8 +77,8 @@ window.ityped.init(document.querySelector(".ityped"), {
   ],
   loop: true,
   typeSpeed: 150,
-  startDelay: 2000,
-  showCursor: false,
+  startDelay: 1000,
+  showCursor: true,
 });
 
 // =================================================

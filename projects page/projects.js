@@ -72,6 +72,24 @@ let projectDetailsArray = [
       techStack : 'javaScript',
       github: 'https://github.com/Ashish-Nagar-027/JS-Todo-List-Project'
     },
+    {
+      name : 'project 13',
+      url : 'https://url-bookmarker-by-ashish-nagar.netlify.app/',
+      techStack : 'javaScript',
+      github: 'https://github.com/Ashish-Nagar-027/Url-Book-Marker'
+    },
+    {
+      name : 'project 14',
+      url : 'https://ashish-nagars-html-css-project-9.netlify.app/',
+      techStack : 'javaScript',
+      github: 'https://github.com/Ashish-Nagar-027/HTML-and-CSS-project-9'
+    },
+    {
+      name : 'project 15',
+      url : 'https://ashish-nagars-html-css-project-1.netlify.app/',
+      techStack : 'javaScript',
+      github: 'https://github.com/Ashish-Nagar-027/Html-and-CSS-Project-1 '
+    },
   ]
   
   
