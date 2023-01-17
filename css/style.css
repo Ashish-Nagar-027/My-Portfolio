@@ -78,6 +78,8 @@ a {
 .more-button {
   z-index: 1;
   margin-top: 1rem;
+  position:absolute;
+  bottom:2rem;
 }
 
 
@@ -356,10 +358,10 @@ ul {
 .project-container {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   width: 100%;
   gap: 20px 10px;
-  margin-top: 10px;
+  margin-top: 10px; 
+  align-items:center;
 }
 
 .project-section {
@@ -488,7 +490,8 @@ ul {
 }
 
 .sub-section-2 h2 {
-  width: 80vw;
+  position : absolute;
+  top: 4rem;
 }
 
 @keyframes project-bg {
@@ -508,21 +511,27 @@ ul {
   width: 300px;
   background-color: #dde2d4;
   background-color: inherit;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.6s ease;
   overflow: hidden;
+  height:157px;
+  border-radius:15px
 }
+
 
 .project-card:hover {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  transform: scale(1.05);
-  background-color: #dde2d4;
+  transform: scale(1.04);
+  height:325px;
 }
+
+
 
 .sub-text {
   font-size: 15px;
   font-weight: 300;
   background-color: #dde2d4;
 }
+
 .project-card h3 {
   background-color: #dde2d4;
 }
@@ -538,10 +547,11 @@ ul {
   object-fit: cover;
   object-position: top;
   transition: all 0.2s ease-in-out;
+  border-radius:15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.project-card:hover .project-img {
-  transform: scale(1.1);
-}
+
+
 
 .btns {
   display: flex;
@@ -664,6 +674,9 @@ nav {
   align-items: center;
 }
 
+.ityped {
+  color: coral;
+}
 
 @media only screen and (max-width: 1000px) {
  
@@ -677,6 +690,7 @@ nav {
 
   .project-container {
     gap: 20px 10px;
+    flex-direction:column;
   }
 
   .hero-text h1 {
@@ -698,11 +712,13 @@ nav {
   .socials {
     margin-top: 1.5rem;
   }
+
+  .sub-section-2 h2 {
+    top: 1rem;
+  }
 }
 
-.ityped {
-  color: coral;
-}
+
 
 @media only screen and (max-width: 750px) {
   #about-me {
@@ -766,9 +782,6 @@ nav {
     font-size: 24px;
   }
 
-  footer {
-    min-height: 50vh;
-  }
 
   .hero-text::before {
     top: 50px;
@@ -872,5 +885,23 @@ nav {
 @media only screen and (max-width: 350px) {
   .socials {
     margin-left: 20px;
+  }
+  .project-card {
+    width:250px
+  }
+  
+  .project-img {
+    width:250px
+  }
+
+  .project-card:hover {
+    transform: scale(1.01);
+  }
+}
+
+@media only screen and (max-width: 300px) {
+
+  .project-card:hover {
+    transform: scale(1);
   }
 }
