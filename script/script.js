@@ -39,7 +39,11 @@ window.addEventListener("DOMContentLoaded", () => {
   }, 5000);
 })
 
-
+// hamburgurger show
+window.addEventListener('load', () => {
+  console.log('loaded')
+  hamburgerButton.style.display = 'block'
+})
 
 // hamburger
 function toggleButton() {
@@ -80,67 +84,4 @@ window.ityped.init(document.querySelector(".ityped"), {
   startDelay: 1000,
   showCursor: true,
 });
-
-// =================================================
-// all  projects  display
-
-let projectDetailsArray = [
-  {
-    name : 'project 1',
-    url : 'https://shopping-cart-by-ashish.vercel.app/',
-    techStack : 'React',
-    github: 'https://github.com/Ashish-Nagar-027/Shopping-cart-'
-  },
-  {
-    name : 'project 2',
-    url : 'https://pexel-photos-by-ashish-nagar.netlify.app/',
-    techStack : 'Html,css,js',
-    github: 'https://github.com/Ashish-Nagar-027/Pexel-photos'
-  },
-  {
-    name : 'project 3',
-    url : 'https://ashish-nagars-html-css-project-15.netlify.app/',
-    techStack : 'HtmlAndCss',
-    github: 'https://github.com/Ashish-Nagar-027/html-and-css-project-15'
-  },
-  {
-    name : 'project 4',
-    url : 'https://shopify-clone-by-ashish.netlify.app/',
-    techStack : 'Tailwind',
-    github: 'https://github.com/Ashish-Nagar-027/shopify-clone-with-tailwind'
-
-  }
-]
-
-
-const projectContainerDiv = document.getElementById('projects-display-container')
-
-projectDetailsArray.map((projectItem) => {
-
-    const projectsDispley = document.createElement('div')
-
-    projectsDispley.setAttribute('class', 'main-projects')
-  
-    projectsDispley.innerHTML = `
-    <div class="tablet ">
-      <div class="trim">
-        <iframe  src="${projectItem.url}" alt="project image"></iframe>
-      </div>
-      <div class="project-links">
-          <hr>
-          <div class="btns">
-            <div class="button"><a href="${projectItem.github}" target="_blank" >Github</a></div>
-            <div class="button"><a href="${projectItem.url}" target="_blank" >Live preview</a></div>
-          </div>
-      </div>
-    </div>
-  `
-  projectContainerDiv.appendChild(projectsDispley)
-})
-
-
-
-// =================================================
-
-
 

@@ -1,7 +1,7 @@
 let projectDetailsArray = [
     {
       name : 'project 1',
-      url : 'https://shopping-cart-by-ashish.vercel.app/',
+      url : 'https://shopping-cart-by-ashish-nagar.netlify.app/',
       techStack : 'React',
       github: 'https://github.com/Ashish-Nagar-027/Shopping-cart-'
     },

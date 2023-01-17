@@ -385,7 +385,7 @@ ul {
   flex-wrap: wrap;
   margin: auto;
   justify-content: space-around;
-  gap: 1.5rem;
+  gap: 2rem;
 } 
 
 .display-screens div{
@@ -406,7 +406,7 @@ ul {
 
 
 .tablet:hover {
-  transform: scale(1.01);
+  transform: scale(1.03);
 }
 
 
@@ -780,6 +780,11 @@ nav {
     width: 350px;
     height: 500px;
    }
+
+   .tablet:hover {
+    transform: scale(1.01);
+  }
+  
  
    .tablet iframe {
      top: 46px;
@@ -790,6 +795,9 @@ nav {
    .tablet iframe { 
      width: 482px;
      height: 640px;
+   }
+   .display-screens {
+    gap: 1.4rem
    }
 }
 
