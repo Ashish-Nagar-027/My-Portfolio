@@ -644,7 +644,7 @@ hr {
   position: absolute;
   top: 4.5rem;
   width: 100%;
-  transition: height 1s, transform 0.8s;
+  transition: height 0.8s, transform 0.8s;
   padding: 10px 0px;
   height: 300px;
   left: 0;
@@ -661,7 +661,7 @@ nav ul {
   align-items: center;
   height: 0px;
   overflow: hidden;
-  transition: height 1s, transform 1s;
+  transition: height 0.8s, transform 0.8s;
   color: #ef744b;
   left: 0;
   background: #101727bb;
