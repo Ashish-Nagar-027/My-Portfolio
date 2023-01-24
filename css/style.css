@@ -519,8 +519,6 @@ ul {
 
 
 .project-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  transform: scale(1.04);
   height:325px;
 }
 
