@@ -35,13 +35,11 @@ window.addEventListener("DOMContentLoaded", () => {
     transform: document.querySelector(".particles-js-canvas-el").style.transform =
       "translate(0%, 0%)";
     document.querySelector(".particles-js-canvas-el").style.width = "100%";
-    hamburgerButton.style.display = 'block'
   }, 5000);
 })
 
 // hamburgurger show
 window.addEventListener('load', () => {
-  console.log('loaded')
   hamburgerButton.style.display = 'block'
 })
 
