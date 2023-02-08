@@ -246,7 +246,24 @@
     <!-- footer section here -->
     <footer id="contact-me">
       <h1 data-aos="fade-left">Contact Me</h1>
-      <p data-aos="fade-right">You can connect me through:</p>
+     <!-- contact me form -->
+     <div class="contact-form-div" data-aos="fade-right">
+      <form class="contact-form" action="https://formspree.io/f/xoqzejkl" method="POST" >
+       <label> Your name:
+         <input type="text" placeholder="Enter Your Name Here" name="name" required>
+       </label>
+       <label> Your email:
+         <input type="email" placeholder="Enter Your Email Here" name="email" required>
+       </label>
+       <label>
+         Your message:
+         <textarea name="message" placeholder="Enter Your Message Here" required></textarea>
+       </label>
+       <!-- your other form fields go here -->
+       <button type="submit" class="contact-form-submit-btn button">Send</button>
+       </form>
+       <div class="contact-socials">
+      <p data-aos="zoom-out">You can connect also me through:</p>
       <div class="contacts" data-aos="zoom-in" data-aos-delay="350">
         <a href="mailto:ashishnagar033@gmail.com"><i class="fa-solid fa-envelope"></i></a>   
          <a href="https://twitter.com/Ashish_Nagar_" class="" target="_blank">
@@ -256,6 +273,8 @@
          <a href="https://www.instagram.com/that_one_dude_277" class="" target="_blank">
           <i class="fa-brands fa-instagram"></i></a>
       </div>
+    </div>
+    </div>
     </footer>
   </body>
 

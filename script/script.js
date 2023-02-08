@@ -7,7 +7,6 @@ const showMoreProjectsBtn = document.querySelector(".show-more-projects-button")
 const navbar = document.getElementById("nav");
 
 
-
 // Navbar
 const mainHeroAreaHeignt = mainHeroArea.getBoundingClientRect();
 const navHeignt = navbar.getBoundingClientRect();
