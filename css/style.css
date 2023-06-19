@@ -563,6 +563,10 @@ hr {
   margin-right: 12px;
 }
 
+.hamburger:hover {
+  transform: scale(1.2);
+}
+
 .hamburger.ham-clicked{
   transform: rotate(-90deg);
 }
@@ -578,6 +582,8 @@ hr {
   margin: 10px;
   transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
+
+
 
 /* ham triangle */
 .ham-clicked .ham-line-1 {
@@ -760,16 +766,16 @@ footer {
 }
 
 .button:hover::before {
-  height: 180%;
-  transition: 0.8s;
-  
+  height: 180%; 
 }
 
 .button:hover {
   color: coral;
-  z-index: 3;
   transition: 0.8s;
+  z-index: 1;
 }
+
+
 
 
 
