@@ -17,7 +17,7 @@ particlesJS(
   {
     particles: {
       number: {
-        value: 100,
+        value: 80,
         density: {
           enable: true,
           value_area: 800,
@@ -72,11 +72,11 @@ particlesJS(
       },
       move: {
         enable: true,
-        speed: 5,
-        direction: "none",
+        speed: 3,
+        direction: "top-right",
         random: false,
         straight: false,
-        out_mode: "out",
+        out_mode: "bounce",
         attract: {
           enable: false,
           rotateX: 600,
@@ -89,7 +89,7 @@ particlesJS(
       events: {
         onhover: {
           enable: true,
-          mode: "repulse",
+          mode: "grab",
         },
         onclick: {
           enable: true,

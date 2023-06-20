@@ -310,6 +310,7 @@ ul {
 .information p {
   font-size: 1rem;
   margin-top: 10px;
+  text-align: justify;
 }
 .headshot-container {
   display: flex;
