@@ -31,7 +31,7 @@ window.addEventListener("scroll", myScrollFunc);
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     
-    transform: document.querySelector(".particles-js-canvas-el").style.transform =
+     document.querySelector(".particles-js-canvas-el").style.transform =
       "translate(0%, 0%)";
     document.querySelector(".particles-js-canvas-el").style.width = "100%";
   }, 5000);
