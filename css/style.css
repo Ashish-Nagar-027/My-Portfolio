@@ -82,6 +82,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  z-index: 1;
 }
 
 .particles-js-canvas-el {
@@ -289,6 +290,7 @@ ul {
   object-position: top;
   border-radius: 50%;
   padding: 1rem;
+  z-index: 1;
   transition: all 0.3s ease-in-out;
 }
 
@@ -301,6 +303,7 @@ ul {
   flex-direction: column;
   text-align: center;
   flex: 1;
+  z-index: 1;
 }
 
 .information h2 {
@@ -322,6 +325,7 @@ ul {
   align-items: center;
   flex: 1;
   justify-content: center;
+  z-index: 1;
 }
 
 /* project section */
@@ -333,6 +337,8 @@ ul {
   gap: 20px 10px;
   margin-top: 10px; 
   align-items:center;
+  z-index: 1;
+
 }
 
 .project-section {
@@ -443,6 +449,7 @@ ul {
 #articles .project-container {
   width: 80vw;
   margin: 1.5rem 0rem;
+  z-index: 1;
 }
 
 .sub-section-2::before {
@@ -673,6 +680,7 @@ footer {
   align-items: center;
   gap: 3rem;
   flex-direction: column;
+  z-index: 1;
 }
 
 .contact-form {
@@ -685,6 +693,7 @@ footer {
   width: 100%;
   min-width: 250px;
   border-radius: 10px;
+  font-family: "Poppins", sans-serif;
 }
 .contact-form label{
   display: flex;
@@ -711,6 +720,9 @@ footer {
   outline: none;
 }
 
+.about-me-h2 {
+  z-index: 1;
+}
 
 .about-me-h2 span {
   display: inline-block;
@@ -720,7 +732,14 @@ footer {
 .about-me-h2 span:hover{
   transition: all 0.3s;
   color: coral;
-  animation: animate 0.6s;
+  animation: animate 0.8s;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+  0 3px 0 #ccc, 0 4px 0 #ccc,
+  0 5px 0 #ccc, 0 6px 0 #ccc,
+  0 7px 0 #ccc, 0 8px 0 #ccc,
+  0 9px 0 #ccc, 0 10px 0 #ccc,
+  0 11px 0 #ccc, 0 12px 0 #ccc,
+  0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes animate {
@@ -755,6 +774,7 @@ footer {
   transition:  0.8s ;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 
 }
 
