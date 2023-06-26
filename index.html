@@ -25,6 +25,54 @@
     <!-- animate on scroll library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- animate on scroll library ends -->
+
+    <style>
+      .trail{
+      width: 24px;
+      height: 24px;
+      border-radius: 15px;
+      background:  #ef744b;
+      position: fixed;
+      animation: come 1s linear forwards; 
+      
+    }
+
+    @keyframes come {
+      0% {
+        transform: scale(1.25);
+        opacity: 1;
+      }
+      10%{
+        transform: scale(1.1) translateY(0px);
+        opacity: 1;
+      }
+      20%{
+        transform: scale(1) translateY(0px);
+        opacity: 0.9;
+      }
+      30%{
+        transform: scale(0.9) translateY(0px);
+        opacity: 0.85;
+      }
+      40%{
+        transform: scale(0.8) translateY(0px);
+        opacity: 0.8;
+      }
+      50%{
+        transform: scale(0.5) translateY(0px);
+        opacity: 0.6;
+      }
+      75%{
+        transform: scale(0.4) translateY(0px);
+        opacity: 0.4;
+      }
+      100%{
+        transform: scale(0) translateY(50px);
+        opacity: 0;
+      }
+      
+    }
+    </style>
   </head>
   <body id="body">
     <!-- main hero section -->
@@ -296,9 +344,23 @@
     </div>
     </div>
     </footer>
-  </body>
 
-  <!-- Animate on scroll  -->
+    <!-- cursor  anmation javaScript  -->
+    <script>
+      var body = document.body
+      document.addEventListener('mousemove',(e) => {
+        var elem = document.createElement('div'); 
+          elem.setAttribute('class','trail')
+          elem.setAttribute('style', `left: ${e.clientX-10}px; top:${e.clientY-10}px;`)
+        
+          elem.onanimationend= () => {
+            elem.remove()
+          }
+          body.insertAdjacentElement('beforeend',elem)
+      })
+    </script>
+     <!-- cursor  anmation javaScript  ends here -->
+      <!-- Animate on scroll  -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -316,5 +378,5 @@
 
     <!-- javaScript here -->
     <script src="./script/script.js"></script>
-
+  </body>
 </html>
