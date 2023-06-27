@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,24 +21,38 @@
             background-color: rgb(16, 23, 39);
             font-size: 1.2rem;
         }
+
+        .about-me-h2:hover {
+     
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                0 3px 0 #ccc, 0 4px 0 #ccc,
+                0 5px 0 #ccc, 0 6px 0 #ccc,
+                0 7px 0 #ccc, 0 8px 0 #ccc,
+                0 9px 0 #ccc, 0 10px 0 #ccc,
+                0 11px 0 #ccc, 0 12px 0 #ccc,
+                0 20px 30px rgba(0, 0, 0, 0.5);
+        }
     </style>
 </head>
+
 <body>
     <nav>
         <div class="button"><a href="../#projects">Go Back Home Page</a></div>
     </nav>
 
     <!-- all projects here -->
-    <section class="project-section" id="projects" >
-        <h2 >Projects</h2>
+    <section class="project-section" id="projects">
+        <h2 class="about-me-h2">Projects</h2>
         <div class="project-container">
-          <div id="projects-display-container" data-aos="fade-up" class="display-screens"></div>
+            <div id="projects-display-container" data-aos="fade-up" class="display-screens"></div>
         </div>
+        <div class="button show-more-projects-button" id="more">click for more projects</div>
         <div class="button show-more-projects-button"><a href="../#projects">Go Back</a></div>
-      </section>
+    </section>
 
-     <!-- javaScript here -->
-     <script src="./projects.js"></script>
-     <!-- javaScript here end -->
+    <!-- javaScript here -->
+    <script src="./projects.js"></script>
+    <!-- javaScript here end -->
 </body>
+
 </html>
