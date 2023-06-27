@@ -299,21 +299,7 @@
     </div>
     </footer>
 
-    <!-- cursor  anmation javaScript  -->
-    <script>
-      var body = document.body
-      document.addEventListener('mousemove',(e) => {
-        var elem = document.createElement('div'); 
-          elem.setAttribute('class','trail')
-          elem.setAttribute('style', `left: ${e.clientX-10}px; top:${e.clientY-10}px;`)
-        
-          elem.onanimationend= () => {
-            elem.remove()
-          }
-          body.insertAdjacentElement('beforeend',elem)
-      })
-    </script>
-     <!-- cursor  anmation javaScript  ends here -->
+
       <!-- Animate on scroll  -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
