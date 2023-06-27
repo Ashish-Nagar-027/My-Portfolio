@@ -6,7 +6,22 @@ const mainHeroArea = document.querySelector(".main-hero-area");
 const showMoreProjectsBtn = document.querySelector(".show-more-projects-button");
 const navbar = document.getElementById("nav");
 
+//===================================
+//cursor
+var body = document.body
+document.addEventListener('mousemove',(e) => {
+  var elem = document.createElement('div'); 
+    elem.setAttribute('class','trail')
+    elem.setAttribute('style', `left: ${e.clientX-10}px; top:${e.clientY-10}px;`)
+  
+    elem.onanimationend= () => {
+      elem.remove()
+    }
+    body.insertAdjacentElement('beforeend',elem)
+  })
+//===================================
 
+//===================================
 // Navbar
 const mainHeroAreaHeignt = mainHeroArea.getBoundingClientRect();
 const navHeignt = navbar.getBoundingClientRect();
@@ -24,6 +39,7 @@ var myScrollFunc = function () {
 };
 
 window.addEventListener("scroll", myScrollFunc);
+//===================================
 
 
 
