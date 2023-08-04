@@ -90,7 +90,7 @@ window.ityped.init(document.querySelector(".ityped"), {
   strings: [
     "Front-End Developer",
     "javaScript Developer",
-    "UI/UX Developer",
+    "UI Developer",
   ],
   loop: true,
   typeSpeed: 150,
