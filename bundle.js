@@ -2,4 +2,8 @@
 
 export function testFunction() {
  console.log('test function loaded successfully')
+  console.log('test function loaded successfully')
+ console.log('test function loaded successfully')
+  console.log('test function loaded successfully')
+
 }
